@@ -171,115 +171,141 @@ nav img {
 }
 
 
+/* Call to Action Section */
 .cta-section {
-    background-color: white;
+    background-color: #fff;
+    padding: 3rem 2rem;
     text-align: center;
-    padding: 40px 20px;
-    margin: -50px auto 0; /* Adjust overlap if needed */
-    max-width: 800px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 800px;
 }
 
 .cta-section h2 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #003344;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #082c4f;
+    margin-bottom: 1rem;
 }
 
 .cta-section button {
-    background-color: #ff52bf;
-    color: white;
+    padding: 0.8rem 1.5rem;
+    background-color: #ff5b8f;
+    color: #fff;
     border: none;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(255, 82, 191, 0.3);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(255, 91, 143, 0.4);
+    transition: background-color 0.3s ease;
 }
 
 .cta-section button:hover {
-    background-color: #ff70c5;
-    box-shadow: 0px 6px 12px rgba(255, 82, 191, 0.5);
+    background-color: #e34c7e;
 }
 
+/* Footer Section */
 .footer {
-    padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #082c4f;
+    color: #fff;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 1rem;
 }
 
 .footer-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px;
+    width: 100%;
 }
 
-.footer-logo {
-    margin-bottom: 15px; /* Add space between logo and contact-info text */
+.contact-info {
+    flex: 1 1 300px;
+    margin-bottom: 1.5rem;
 }
 
-.footer-logo img {
-    width: 120px; /* Adjust the logo size */
-    align-content: left;
+.contact-info p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
 }
 
-.contact-info, .footer-links, .footer-social {
-    flex: 1;
-    min-width: 150px; /* Set minimum width for responsive layout */
-}
-
-.contact-info img,
-.footer-social img {
-    display: inline-block;
-    vertical-align: middle;
+.contact-info img {
     margin-right: 10px;
+}
+
+.footer-links {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
 }
 
 .footer-links .column {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.footer-links a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 5px;
+.footer-links .column a {
+    color: #fff;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links .column a:hover {
+    color: #ff5b8f;
+}
+
+.footer-social {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-social a {
-    margin-right: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-.footer-social img {
-    width: 24px;
-    height: 24px;
+.footer-social a:hover {
+    color: #ff5b8f;
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
     text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .contact-info, .footer-links, .footer-social {
-        text-align: center; /* Center align text on smaller screens */
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .footer-logo {
-        text-align: center; /* Center the logo for smaller screens */
+    .footer-social {
+        margin-top: 1rem;
     }
 }
-
 
 
 
