@@ -1,23 +1,22 @@
-/* Reset */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
 body {
     font-family: "Barlow", sans-serif;
-    background-color: #f7faff; /* Matches the light blue background */
+    background-color: #f7faff; 
     background-image: url("asset/bg-hero-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* Header Section */
+
 .header {
-    background-color: #e2f6ff; /* Match the header background */
+    background-color: #e2f6ff; 
     padding: 20px 30px;
 }
 
@@ -53,23 +52,23 @@ nav img {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Intro Section */
+
 .Intro {
     display: flex;
-    flex-direction: column-reverse; /* For mobile responsiveness */
+    flex-direction: column-reverse; 
     align-items: center;
     justify-content: center;
     gap: 2px;
     /* max-width: 1200px; */
     /* margin: 50px auto; */
     /* padding: 0 20px; */
-    background-color: #e2f6ff; /* Matches the section background */
+    background-color: #e2f6ff; 
 }
 
-/* Adjusted for desktop responsiveness */
+
 @media (min-width: 768px) {
     .Intro {
-        flex-direction: row; /* Default row layout */
+        flex-direction: row;
     }
 }
 
@@ -111,7 +110,7 @@ nav img {
     box-shadow: 0px 6px 12px rgba(255, 82, 191, 0.5);
 }
 
-/* Illustration Section */
+
 .illustration {
     flex: 3;
     text-align: center;
@@ -125,19 +124,19 @@ nav img {
 
 .grow {
     display: flex;
-    flex-direction: column-reverse; /* For mobile responsiveness */
+    flex-direction: column-reverse; 
     align-items: center;
     justify-content: center;
     gap: 2px;
     /* max-width: 1200px; */
     margin: 100px 10px 40px 200px ;
     padding: 100 0px;
-    background-color: #ffffff; /* Matches the section background */
+    background-color: #ffffff; 
 }
 
 @media (min-width: 768px) {
     .grow {
-        flex-direction: row; /* Default row layout */
+        flex-direction: row; 
     }
 }
 
@@ -162,7 +161,7 @@ nav img {
     margin-bottom: 30px;
 }
 
-/* Illustration Section */
+
 .growimg {
     flex: 1;
     text-align: center;
@@ -196,7 +195,7 @@ nav img {
 
 .cta-section button {
     padding: 0.8rem 1.5rem;
-    background-color: #ff5b8f;
+    background-color: #ff52bf;
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -210,9 +209,9 @@ nav img {
     background-color: #e34c7e;
 }
 
-/* Footer Section */
+
 .footer {
-    background-color: #082c4f;
+    background-color: #00252e;
     color: #fff;
     padding: 8rem 2rem 2rem;
     display: flex;
@@ -227,14 +226,15 @@ nav img {
 
 .footer-logo {
     position: absolute;
-    top: 2rem;
-    left: 2rem;
+    top: 5rem;
+    left: 1rem;
+    
 }
 
 
 .footer-logo {
     /* margin-bottom: 15px;  */
-    text-align: right;   /* Ensure the logo is centered */
+    text-align: right;   
 }
 
 .footer-logo img {
@@ -309,7 +309,7 @@ nav img {
     right: 2rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 375px) {
     .footer {
         flex-direction: column;
@@ -355,19 +355,8 @@ nav img {
     height: 200px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
+    
     background-color: #003344;
     color: white;
     padding: 50px 5%;
@@ -378,6 +367,7 @@ nav img {
 }
 
 .footer-content {
+    
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -405,13 +395,13 @@ nav img {
     font-size: 0.95rem;
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 10px; 
 }
 
 .contact-icon {
-    width: 10px; /* Icon size */
+    width: 10px; 
     height: 10px;
-    flex-shrink: 0; /* Prevents icon from shrinking */
+    flex-shrink: 0; 
 }
 
 .footer-links {
@@ -459,33 +449,23 @@ nav img {
     font-size: 0.8rem;
 }
 .footer-logo {
-    filter: brightness(0) invert(1); /* Converts dark text to white */
+    filter: brightness(0) invert(1); 
     width: 200px;
     height: 60%;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
 .contact-info, .footer-links, .footer-social {
-    flex: 1; /* Allow each div to grow/shrink as needed */
-    min-width: 150px; /* Optional: Minimum width for smaller screens */
+    flex: 1; 
+    min-width: 150px; 
 }
 
 .contact-info img,
 .footer-social img {
-    display: inline-block; /* Ensure icons are inline with text */
-    vertical-align: middle; /* Align icons to the middle of the text */
-    margin-right: 10px; /* Add spacing after icons */
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 10px; 
 }
 
 .footer-links .column {
@@ -493,18 +473,18 @@ nav img {
 }
 
 .footer-links a {
-    display: block; /* Make each link on a new line */
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Use default text color */
-    margin-bottom: 5px; /* Add spacing between links */
+    display: block; 
+    text-decoration: none; 
+    color: inherit; 
+    margin-bottom: 5px; 
 }
 
 .footer-social a {
-    margin-right: 10px; /* Add spacing between icons */
+    margin-right: 10px; 
 }
 
 .footer-social img {
-    width: 24px; /* Set size of social icons */
+    width: 24px; 
     height: 24px;
 }
 
@@ -532,21 +512,21 @@ nav img {
  */ 
 
 
- /* Header responsiveness for smaller screens */
+
 @media (max-width: 576px) {
     .header nav {
         flex-direction: column;
         align-items: center;
-        gap: 1rem; /* Add space between logo and button */
+        gap: 1rem; 
     }
 
     .nav-links button {
-        width: 120px; /* Slightly reduce button width for mobile */
-        font-size: 14px; /* Adjust font size */
+        width: 120px; 
+        font-size: 14px; 
     }
 }
 
-/* Footer alignment for smaller screens */
+
 @media (max-width: 576px) {
     .footer-content {
         flex-direction: column;
@@ -561,24 +541,24 @@ nav img {
     }
 
     .footer-social {
-        justify-content: flex-start; /* Align icons to the left */
+        justify-content: flex-start; 
         margin-top: 1rem;
     }
 }
 
-/* Consistent padding for the grow section */
+
 .grow {
-    padding: 20px; /* Uniform padding */
+    padding: 20px; 
 }
 
 @media (max-width: 768px) {
     .grow {
-        margin: 20px; /* Ensure spacing looks clean on tablets */
+        margin: 20px; 
         padding: 20px;
     }
 
     .growimg img {
-        width: 100%; /* Allow images to scale better on smaller devices */
+        width: 100%; 
         height: auto;
     }
 }
