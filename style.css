@@ -207,6 +207,95 @@ nav img {
 }
 
 .footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px;
+}
+
+.footer-logo {
+    margin-bottom: 15px; /* Add space between logo and contact-info text */
+}
+
+.footer-logo img {
+    width: 120px; /* Adjust the logo size */
+    align-content: left;
+}
+
+.contact-info, .footer-links, .footer-social {
+    flex: 1;
+    min-width: 150px; /* Set minimum width for responsive layout */
+}
+
+.contact-info img,
+.footer-social img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-links .column {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 5px;
+}
+
+.footer-social a {
+    margin-right: 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+
+    .contact-info, .footer-links, .footer-social {
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .footer-logo {
+        text-align: center; /* Center the logo for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
     background-color: #003344;
     color: white;
     padding: 50px 5%;
@@ -228,6 +317,9 @@ nav img {
     flex: 1;
     min-width: 300px;
     margin-right: 20px;
+    width: 200px;
+
+    height: 60%;
 }
 
 .footer-logo img {
@@ -246,7 +338,7 @@ nav img {
 
 .contact-icon {
     width: 10px; /* Icon size */
-    height: 20px;
+    height: 10px;
     flex-shrink: 0; /* Prevents icon from shrinking */
 }
 
@@ -300,3 +392,69 @@ nav img {
     height: 60%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-info, .footer-links, .footer-social {
+    flex: 1; /* Allow each div to grow/shrink as needed */
+    min-width: 150px; /* Optional: Minimum width for smaller screens */
+}
+
+.contact-info img,
+.footer-social img {
+    display: inline-block; /* Ensure icons are inline with text */
+    vertical-align: middle; /* Align icons to the middle of the text */
+    margin-right: 10px; /* Add spacing after icons */
+}
+
+.footer-links .column {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    display: block; /* Make each link on a new line */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use default text color */
+    margin-bottom: 5px; /* Add spacing between links */
+}
+
+.footer-social a {
+    margin-right: 10px; /* Add spacing between icons */
+}
+
+.footer-social img {
+    width: 24px; /* Set size of social icons */
+    height: 24px;
+}
+
+/* @media (max-width: 576px) {
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grow {
+        margin: 20px; /* Reduce margin for small devices */
+    /* }
+
+    .text button, .nav-links button {
+        font-size: 14px; /* Reduce button font size */
+        /* padding: 10px 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+ */ 
