@@ -9,6 +9,10 @@
 body {
     font-family: "Barlow", sans-serif;
     background-color: #f7faff; /* Matches the light blue background */
+    background-image: url("asset/bg-hero-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Header Section */
@@ -170,23 +174,24 @@ nav img {
     height:50% ;
 }
 
-
 /* Call to Action Section */
 .cta-section {
     background-color: #fff;
-    padding: 3rem 2rem;
     text-align: center;
+    padding: 3rem 2rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin: 2rem auto;
+    margin: -5rem auto 3rem;
     width: 90%;
     max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .cta-section h2 {
     font-size: 2rem;
     color: #082c4f;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-section button {
@@ -209,56 +214,68 @@ nav img {
 .footer {
     background-color: #082c4f;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 8rem 2rem 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    margin-top: -5rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+
+.footer-logo {
+    /* margin-bottom: 15px;  */
+    text-align: right;   /* Ensure the logo is centered */
 }
 
 .footer-logo img {
-    width: 150px;
     margin-bottom: 1rem;
+    width: 200px;
 }
+
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 5rem;
+    align-items: flex-start;
 }
 
-.contact-info {
-    flex: 1 1 300px;
-    margin-bottom: 1.5rem;
-}
 
 .contact-info p {
     margin-bottom: 1rem;
-    font-size: 0.9rem;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .contact-info img {
-    margin-right: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 .footer-links {
-    flex: 1 1 300px;
     display: flex;
+    flex: 1;
     justify-content: space-around;
-    margin-bottom: 1.5rem;
-}
-
-.footer-links .column {
-    display: flex;
-    flex-direction: column;
 }
 
 .footer-links .column a {
     color: #fff;
     margin-bottom: 0.5rem;
+    display: block;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
@@ -268,30 +285,38 @@ nav img {
 }
 
 .footer-social {
-    flex: 1 1 300px;
     display: flex;
-    justify-content: space-around;
+    flex: 1;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
 }
 
-.footer-social a {
-    color: #fff;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
+.footer-social a img {
+    width: 30px;
+    transition: opacity 0.3s ease;
 }
 
-.footer-social a:hover {
-    color: #ff5b8f;
+.footer-social a img:hover {
+    opacity: 0.7;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.8rem;
+    text-align: right;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 375px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: center;
@@ -304,10 +329,31 @@ nav img {
 
     .footer-social {
         margin-top: 1rem;
+        align-items: center;
     }
+
+    .footer-logo {
+        position: static;
+        margin-bottom: 1rem;
+        
+    }
+
+    .footer-bottom {
+        position: static;
+        margin-top: 1rem;
+        text-align: center;
+    }
+    body {
+        background-image: url("asset/bg-hero-mobile.svg");
+      }
 }
 
 
+
+.white {
+    background-color: #ffffff;
+    height: 200px;
+}
 
 
 
@@ -484,3 +530,55 @@ nav img {
     }
 }
  */ 
+
+
+ /* Header responsiveness for smaller screens */
+@media (max-width: 576px) {
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem; /* Add space between logo and button */
+    }
+
+    .nav-links button {
+        width: 120px; /* Slightly reduce button width for mobile */
+        font-size: 14px; /* Adjust font size */
+    }
+}
+
+/* Footer alignment for smaller screens */
+@media (max-width: 576px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-social {
+        justify-content: flex-start; /* Align icons to the left */
+        margin-top: 1rem;
+    }
+}
+
+/* Consistent padding for the grow section */
+.grow {
+    padding: 20px; /* Uniform padding */
+}
+
+@media (max-width: 768px) {
+    .grow {
+        margin: 20px; /* Ensure spacing looks clean on tablets */
+        padding: 20px;
+    }
+
+    .growimg img {
+        width: 100%; /* Allow images to scale better on smaller devices */
+        height: auto;
+    }
+}
