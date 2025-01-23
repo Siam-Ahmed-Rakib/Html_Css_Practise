@@ -169,3 +169,134 @@ nav img {
     max-width: 600px;
     height:50% ;
 }
+
+
+.cta-section {
+    background-color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin: -50px auto 0; /* Adjust overlap if needed */
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #003344;
+    margin-bottom: 20px;
+}
+
+.cta-section button {
+    background-color: #ff52bf;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(255, 82, 191, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-section button:hover {
+    background-color: #ff70c5;
+    box-shadow: 0px 6px 12px rgba(255, 82, 191, 0.5);
+}
+
+.footer {
+    background-color: #003344;
+    color: white;
+    padding: 50px 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.contact-icon {
+    width: 10px; /* Icon size */
+    height: 20px;
+    flex-shrink: 0; /* Prevents icon from shrinking */
+}
+
+.footer-links {
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    min-width: 300px;
+}
+
+.footer-links .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff52bf;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #4a4a4a;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer-logo {
+    filter: brightness(0) invert(1); /* Converts dark text to white */
+    width: 200px;
+    height: 60%;
+}
+
