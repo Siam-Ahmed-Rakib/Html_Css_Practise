@@ -1,4 +1,4 @@
-# Html_Css_Practise# Huddle Website Replication
+# Huddle Website Replication
 
 This repository contains my first HTML and CSS project. In this project, I have attempted to replicate a page from the Huddle website. Although it is not a perfect replication, it serves as a practice exercise to improve my HTML and CSS skills.
 
